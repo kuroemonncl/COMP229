@@ -1,0 +1,50 @@
+<!--
+    File: projects.ejs
+    Name: Linh Nguyen
+    Student ID: 301265700
+    Date: October 09, 2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <!-- Include the header partial -->
+        <%- include('partials/header') %>
+    </header>
+<body>
+    <div class="content-box">
+        <main>
+            <!-- Projects -->
+            <h1>Projects</h1>
+            <p>Discover three standout projects I'm proud to showcase.</p>
+            <div class="project-bubble">
+                <div class="project">
+                    <h2>E-Commerce Website Redesign</h2>
+                    <p>Role: Web Developer</p>
+                    <p>Description: Improved an e-commerce site for better user experience and increased conversions with responsive design and streamlined checkout.</p>
+                    <img src="/images/design.png" alt="Project 1 - E-Commerce Website Redesign">
+                </div>
+            </div>
+            <div class="project-bubble">
+                <div class="project">
+                    <h2>Mobile App Development</h2>
+                    <p>Role: Mobile App Developer</p>
+                    <p>Description: Led mobile app development for a versatile, user-friendly application, enhancing productivity and convenience.</p>
+                    <img src="/images/mobile.png" alt="Project 2 - Mobile App Development">
+                </div>
+            </div>
+            <div class="project-bubble">
+                <div class="project">
+                    <h2>Personal Portfolio Website</h2>
+                    <p>Role: Designer and Developer</p>
+                    <p>Description: Developed a portfolio website, showcasing projects, skills, and contact information for a professional online presence.</p>
+                    <img src="/images/portfolio.png" alt="Project 3 - Personal Portfolio Website">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <!-- Include the footer partial -->
+            <%- include('partials/footer') %>
+        </footer>
+    </div>
+</body>
+</html>

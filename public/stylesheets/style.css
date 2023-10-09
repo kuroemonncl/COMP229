@@ -1,0 +1,266 @@
+/*
+  File: style.css
+  Name: Linh Nguyen
+  Student ID: 301265700
+  Date: October 09, 2023
+*/
+
+/* General styles for the entire page */
+body {
+  padding: 0;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Styles for the main content box */
+.content-box {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center; 
+}
+
+/* Content Styles */
+
+/* Flex container for main content */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  text-align: center; 
+}
+
+/* Styles for the main content area */
+main {
+  margin-top: 120px;
+}
+
+/* Footer Styles */
+
+/* Styling for the footer section */
+footer {
+  text-align: center;
+  font-style: italic;
+  padding: 1em;
+}
+
+/* Links Styles */
+
+/* Styling for links in the navigation bar */
+a {
+  color: #00B7FF;
+  font-size: 18px;
+}
+
+/* Header Styles */
+
+/* Styling for the navigation bar */
+.navbar {
+  background-color: #00B7FF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Logo Styles */
+
+/* Styling for the logo */
+.logo {
+  margin-right: 20px;
+}
+
+/* Logo image styles */
+.logo img {
+  max-height: 60px;
+}
+
+/* Navigation Links Styles */
+
+/* Styling for navigation links */
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Styling for individual navigation link items */
+.nav-links li {
+  margin-right: 20px;
+}
+
+/* Styling for navigation link anchors */
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Hover effect for navigation links */
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+/* Zigzag Container Styles */
+
+/* Styles for the zigzag container */
+.zigzag-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+/* Action Section Styles */
+
+/* Styling for action sections (e.g., About Me, Projects, Services, etc.) */
+.action-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Styles for images within action sections */
+.action-section img, .about-me-bubble img {
+  max-width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* About Me Bubble Styles */
+
+/* Styling for the About Me bubble section */
+.about-me-bubble {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Form Styles */
+
+/* Styling for the Form section */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Styling for the form boxes */
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.input-container label {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.input-container input,
+.input-container textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: calc(100% - 20px);
+}
+
+.form-bubble {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+.project-bubble {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+}
+
+.project-bubble img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Services Styles */
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between; 
+}
+
+.service-bubble {
+  flex: 1;
+  width: calc(50% - 20px); 
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0;
+}
+
+.service {
+  flex: 1;
+  text-align: center;
+}
+
+.service h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 18px;
+}
+
+.service-image img {
+  width: 100%; 
+  max-height: 200px; 
+  object-fit: cover;
+  border-radius: 10px;
+}

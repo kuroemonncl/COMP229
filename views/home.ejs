@@ -1,0 +1,75 @@
+<!--
+    File: home.ejs
+    Name: Linh Nguyen
+    Student ID: 301265700
+    Date: October 09, 2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <!-- Include the header partial -->
+        <%- include('partials/header') %>
+    </header>
+<body>
+    <div class="content-box">
+        <main>
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm Linh Nguyen, a Vietnamese student majoring in Software Technology Technician in Centennial College</p>
+            <div class="zigzag-container">
+                <!-- About Me Section -->
+                <section class="action-section">
+                    <img src="/images/aboutme.png" alt="About Me" class="left-image">
+                    <div class="content right-content">
+                        <h2>About Me</h2>
+                        <p>Learn more about my journey and experiences.</p>
+                        <a href="/about" class="button">Learn More</a>
+                    </div>
+                </section>
+            
+                <!-- Projects Section -->
+                <section class="action-section reversed">
+                    <div class="content left-content">
+                        <h2>Projects</h2>
+                        <p>View the projects I've completed</p>
+                        <a href="/projects" class="button">View Projects</a>
+                    </div>
+                    <img src="/images/projects.png" alt="Projects" class="right-image">
+                </section>
+            
+                <!-- Services Section -->
+                <section class="action-section">
+                    <img src="/images/services.png" alt="Services" class="left-image">
+                    <div class="content right-content">
+                        <h2>Services</h2>
+                        <p>Find out more about my services</p>
+                        <a href="/services" class="button">View Services</a>
+                    </div>
+                </section>
+            
+                <!-- Contact Me Section -->
+                <section class="action-section reversed">
+                    <div class="content left-content">
+                        <h2>Contact Me</h2>
+                        <p>Contact me for inquiries or collaborations.</p>
+                        <a href="/contact" class="button">Learn More</a>
+                    </div>
+                    <img src="/images/contact.png" alt="Message Me" class="right-image">
+                </section>
+            
+                <!-- Mission Statement Section -->
+                <section class="action-section">
+                    <img src="/images/mission.png" alt="Mission" class="left-image">
+                    <div class="content right-content">
+                        <h2>Mission Statement</h2>
+                        <p>My mission is to excel in my Software Engineering Technology program at Centennial College and develop expertise in software development. I am dedicated to continuous learning and pushing the boundaries of technology. With a strong work ethic and a passion for problem-solving, I aim to contribute to the tech industry by creating efficient and impactful software solutions.</p>
+                    </div>
+                </section>
+            </div>            
+        </main>
+        <footer>
+            <!-- Include the footer partial -->
+            <%- include('partials/footer') %>
+        </footer>
+    </div>
+</body>
+</html>

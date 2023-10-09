@@ -1,0 +1,51 @@
+<!--
+    File: about.ejs
+    Name: Linh Nguyen
+    Student ID: 301265700
+    Date: October 09, 2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <!-- Include the header partial -->
+        <%- include('partials/header') %>
+    </header>
+<body>
+    <div class="content-box">
+        <main>
+            <!-- About Me -->
+            <section class="about-me-section">
+                <div class="about-me-content">
+                    <h1>About Me</h1>
+                    <p>Learn more about me.</p>
+                </div>
+                <div class="about-me-bubble">
+                    <div class="about-me-image">
+                        <img src="/images/me.png" alt="Linh Nguyen's Image">
+                    </div>
+                    <div class="about-me-intro">
+                        <h2>Linh Nguyen</h2>
+                        <p>I'm a passionate software developer student, who is driven to create outstanding software applications. 
+                            My skill set includes anything from web development to application development. I'm devoted to creating apps 
+                            that are not just effective but also highly reliable. I have learned several programming languages, including 
+                            C#, JavaScript, Python and Java, and I'm always eager to study more. My commitment is to solve complex puzzles 
+                            and use technology effectively to provide value to every project.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- My Resume -->
+            <section class="cv-section">
+                <h2>My Resume</h2>
+                <p>Download my resume in PDF format: <a href="/resume.pdf" target="_blank">Download PDF</a></p>
+                <img src="/images/resume1.png" alt="Linh Nguyen's CV">
+                <img src="/images/resume2.png" alt="Linh Nguyen's CV">
+                <img src="/images/resume3.png" alt="Linh Nguyen's CV">
+            </section>
+        </main>
+        <footer>
+            <!-- Include the footer partial -->
+            <%- include('partials/footer') %>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!--
+    File: contact.ejs
+    Name: Linh Nguyen
+    Student ID: 301265700
+    Date: October 09, 2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <!-- Include the header partial -->
+        <%- include('partials/header') %>
+    </header>
+<body>
+    </header>
+    <div class="content-box">
+        <main>
+            <h1>Contact Information</h1>
+            <div class="contact-info-panel">
+                <div class="contact-info">
+                    <h2>Contact Me</h2>
+                    <p>
+                        Feel free to reach out to me using the contact form or the information below.
+                    </p>
+                    <p>Email: kuroemonncl@gmail.com</p>
+                    <p>VN Phone: +84 (966) 958-984</p>
+                    <p>CA Phone: +1 (437) 436-6952</p>
+                </div>
+                <!-- Contact Form -->
+                <form action="/" method="post" class="form-bubble">
+                    <div class="input-container">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="contactNumber">Contact Number:</label>
+                        <input type="tel" id="contactNumber" name="contactNumber" required>
+                    </div>                    
+                    <div class="input-container">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <!-- Include the footer partial -->
+            <%- include('partials/footer') %>
+        </footer>
+    </div>
+</body>
+</html>

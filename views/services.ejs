@@ -1,0 +1,66 @@
+<!--
+    File: services.ejs
+    Name: Linh Nguyen
+    Student ID: 301265700
+    Date: October 09, 2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <!-- Include the header partial -->
+        <%- include('partials/header') %>
+    </header>
+<body>
+    <div class="content-box">
+        <main>
+            <!-- Services -->
+            <h1>Services</h1>
+            <p>Discover a variety of offerings tailored to meet diverse needs.</p>
+            <!-- Service List -->
+            <div class="services-list">
+                <div class="service-bubble">
+                    <div class="service">
+                        <h2>Web Development</h2>
+                        <p>Crafting modern and responsive websites tailored to your unique needs and goals.</p>
+                    </div>
+                    <div class="service-image">
+                        <img src="/images/web.png" alt="Service 1 - Web Development">
+                    </div>
+                </div>
+                <div class="service-bubble">
+                    <div class="service">
+                        <h2>Mobile App Development</h2>
+                        <p>Developing user-friendly mobile applications that run seamlessly on various platforms.</p>
+                    </div>
+                    <div class="service-image">
+                        <img src="/images/appdev.png" alt="Service 2 - Mobile App Development">
+                    </div>
+                </div>
+                <div class="service-bubble">
+                    <div class="service">
+                        <h2>General Programming</h2>
+                        <p>Delivering personalised programming solutions designed to meet the specific requirements of your projects.</p>
+                    </div>
+                    <div class="service-image">
+                        <img src="/images/programming.png" alt="Service 3 - General Programming">
+                    </div>
+                </div>
+                <div class="service-bubble">
+                    <div class="service">
+                        <h2>Graphics Design</h2>
+                        <p>Creating visually appealing and impactful graphics for your branding, marketing materials, and digital content, 
+                            enhancing your brand's identity and engagement.</p>
+                    </div>
+                    <div class="service-image">
+                        <img src="/images/graphics.png" alt="Service 4 - Graphics Design">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <!-- Include the footer partial -->
+            <%- include('partials/footer') %>
+        </footer>
+    </div>
+</body>
+</html>
